@@ -1,0 +1,370 @@
+{
+    "gender": "male",
+    "name": {
+        "title": "mr",
+        "first": "mélvin",
+        "last": "da rocha"
+    },
+    "location": {
+        "street": "9226 rua treze de maio ",
+        "city": "niterói",
+        "state": "rio grande do sul",
+        "postcode": 45519
+    },
+    "email": "mélvin.darocha@example.com",
+    "login": {
+        "username": "greentiger898",
+        "password": "reddog",
+        "salt": "8WwFCsxT",
+        "md5": "b21f286def3ee9955801ec7a52abea7e",
+        "sha1": "98b9c7ca0ea6a5d39f8819b5adc3bb5c550f885b",
+        "sha256": "a443e23fb2a31fe4c0bde58fdb2a809a912202644221c43db80bb0cb3a7ba132"
+    },
+    "dob": "1991-07-21 19:38:42",
+    "registered": "2008-05-26 01:12:00",
+    "phone": "(54) 3040-2656",
+    "cell": "(25) 5199-3994",
+    "id": {
+        "name": "",
+        "value": null
+    },
+    "picture": {
+        "large": "https://randomuser.me/api/portraits/men/50.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/50.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/50.jpg"
+    },
+    "nat": "BR"
+},
+{
+    "gender": "male",
+    "name": {
+        "title": "mr",
+        "first": "nihal",
+        "last": "karaer"
+    },
+    "location": {
+        "street": "2134 mevlana cd",
+        "city": "tekirdağ",
+        "state": "denizli",
+        "postcode": 74213
+    },
+    "email": "nihal.karaer@example.com",
+    "login": {
+        "username": "orangefrog696",
+        "password": "mmmmmmm",
+        "salt": "unWZmirq",
+        "md5": "7cd4eea03579470ee5d78c6d654cb9e9",
+        "sha1": "15f28ad9d03eb4d28ce464e4d3238913ea11b75f",
+        "sha256": "f3524c935908e6e166785a211eae3b8cff231e35af73e414ee2f016bc1a1d1d1"
+    },
+    "dob": "1958-03-21 05:04:49",
+    "registered": "2007-11-05 16:30:30",
+    "phone": "(750)-583-2684",
+    "cell": "(232)-372-7870",
+    "id": {
+        "name": "",
+        "value": null
+    },
+    "picture": {
+        "large": "https://randomuser.me/api/portraits/men/76.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/76.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/76.jpg"
+    },
+    "nat": "TR"
+},
+{
+    "gender": "female",
+    "name": {
+        "title": "ms",
+        "first": "elizabeth",
+        "last": "dunn"
+    },
+    "location": {
+        "street": "7423 harrison ct",
+        "city": "garden grove",
+        "state": "south dakota",
+        "postcode": 53300
+    },
+    "email": "elizabeth.dunn@example.com",
+    "login": {
+        "username": "crazybutterfly345",
+        "password": "hole",
+        "salt": "CkEMayf9",
+        "md5": "1a1ac51dfaf265c105c58cca310103b1",
+        "sha1": "35fb4058f3bb7c9b81c5adf99b7e04e2f7319d7f",
+        "sha256": "2f66c3dcf15523411f1b983c2337f94b6cc505d9181bee6a19a7c8e7ae59337b"
+    },
+    "dob": "1994-12-21 06:11:25",
+    "registered": "2015-11-07 19:26:34",
+    "phone": "(706)-129-8943",
+    "cell": "(212)-106-8105",
+    "id": {
+        "name": "SSN",
+        "value": "808-44-4288"
+    },
+    "picture": {
+        "large": "https://randomuser.me/api/portraits/women/7.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/7.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/7.jpg"
+    },
+    "nat": "US"
+},
+{
+    "gender": "male",
+    "name": {
+        "title": "mr",
+        "first": "william",
+        "last": "sirko"
+    },
+    "location": {
+        "street": "1285 argyle st",
+        "city": "beaumont",
+        "state": "québec",
+        "postcode": 45648
+    },
+    "email": "william.sirko@example.com",
+    "login": {
+        "username": "whitewolf202",
+        "password": "mustang1",
+        "salt": "cyG1knlY",
+        "md5": "9dea50d209cdc21da1194711a7e90dff",
+        "sha1": "8f76302528e0d58e79974ee75571bcac3864f199",
+        "sha256": "9bc6344ee5d0eb37cf559528a2c98fa03b9ed16b70533b03a7b301af9b82956a"
+    },
+    "dob": "1960-05-11 19:01:28",
+    "registered": "2012-01-19 09:43:03",
+    "phone": "316-395-9160",
+    "cell": "229-888-0350",
+    "id": {
+        "name": "",
+        "value": null
+    },
+    "picture": {
+        "large": "https://randomuser.me/api/portraits/men/25.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/25.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/25.jpg"
+    },
+    "nat": "CA"
+},
+{
+    "gender": "male",
+    "name": {
+        "title": "mr",
+        "first": "mustafa",
+        "last": "körmükçü"
+    },
+    "location": {
+        "street": "6718 tunalı hilmi cd",
+        "city": "bitlis",
+        "state": "sivas",
+        "postcode": 72757
+    },
+    "email": "mustafa.körmükçü@example.com",
+    "login": {
+        "username": "lazytiger633",
+        "password": "rogue",
+        "salt": "AsCOjYHb",
+        "md5": "70c7a1b93ac443c755a82a0774b90e27",
+        "sha1": "3cff8b17bece79201beeeb6a4cf3febafc4acc79",
+        "sha256": "7dab0720f8e33254e84454d8f2f03a64e2e72461589084306cddcdd5423a5b68"
+    },
+    "dob": "1971-06-15 06:50:16",
+    "registered": "2016-06-06 03:50:06",
+    "phone": "(781)-378-0628",
+    "cell": "(111)-478-4784",
+    "id": {
+        "name": "",
+        "value": null
+    },
+    "picture": {
+        "large": "https://randomuser.me/api/portraits/men/81.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/81.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/81.jpg"
+    },
+    "nat": "TR"
+},
+{
+    "gender": "female",
+    "name": {
+        "title": "madame",
+        "first": "emma",
+        "last": "bonnet"
+    },
+    "location": {
+        "street": "9923 rue de l'abbé-patureau",
+        "city": "reverolle",
+        "state": "basel-landschaft",
+        "postcode": 8750
+    },
+    "email": "emma.bonnet@example.com",
+    "login": {
+        "username": "goldenmeercat217",
+        "password": "whisky",
+        "salt": "hvsPXJwG",
+        "md5": "210bc07ea4379533eb545bae3b3c846e",
+        "sha1": "7b56612d8be3eb6f16b27688eb2c68aba870c230",
+        "sha256": "34b330cb4d4254f16762004d0e5ceb4c70e701205650604fa2484154972ce931"
+    },
+    "dob": "1973-12-05 12:16:13",
+    "registered": "2014-09-14 07:42:28",
+    "phone": "(761)-821-6887",
+    "cell": "(023)-671-7015",
+    "id": {
+        "name": "AVS",
+        "value": "756.CCHH.GEJU.41"
+    },
+    "picture": {
+        "large": "https://randomuser.me/api/portraits/women/60.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/60.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/60.jpg"
+    },
+    "nat": "CH"
+},
+{
+    "gender": "female",
+    "name": {
+        "title": "ms",
+        "first": "vilma",
+        "last": "aalto"
+    },
+    "location": {
+        "street": "9232 suvantokatu",
+        "city": "pornainen",
+        "state": "central finland",
+        "postcode": 11052
+    },
+    "email": "vilma.aalto@example.com",
+    "login": {
+        "username": "crazyfish235",
+        "password": "flamingo",
+        "salt": "1V5LBPSq",
+        "md5": "3bff5ba85fbadf28e4757dd0ab1cdc72",
+        "sha1": "d1b0771eca8fbc6bf0bae4b2f0d2ff93abe51038",
+        "sha256": "0dc417802ab7f4a5b9a249668414b51f8d4e4046988a0b64ad8804375c33eba8"
+    },
+    "dob": "1965-02-05 14:23:11",
+    "registered": "2013-06-20 08:23:09",
+    "phone": "03-341-823",
+    "cell": "043-850-38-64",
+    "id": {
+        "name": "HETU",
+        "value": "665-4504"
+    },
+    "picture": {
+        "large": "https://randomuser.me/api/portraits/women/5.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/5.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/5.jpg"
+    },
+    "nat": "FI"
+},
+{
+    "gender": "female",
+    "name": {
+        "title": "mrs",
+        "first": "alejandra",
+        "last": "torres"
+    },
+    "location": {
+        "street": "2642 calle de ángel garcía",
+        "city": "fuenlabrada",
+        "state": "melilla",
+        "postcode": 41585
+    },
+    "email": "alejandra.torres@example.com",
+    "login": {
+        "username": "brownladybug798",
+        "password": "nudes",
+        "salt": "DNJs55wn",
+        "md5": "7d012d6a1d51ac58946fd7b662fee386",
+        "sha1": "4af8f618416eef07e8d62c8e17a168c8a0802a7c",
+        "sha256": "79680a50e8c1185c6a694e8baab503ca5a7a04bd7e7bf6da44cf8309aca0f84b"
+    },
+    "dob": "1993-04-04 22:44:24",
+    "registered": "2011-01-05 03:29:13",
+    "phone": "914-299-042",
+    "cell": "601-970-886",
+    "id": {
+        "name": "DNI",
+        "value": "22283387-N"
+    },
+    "picture": {
+        "large": "https://randomuser.me/api/portraits/women/2.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/2.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/2.jpg"
+    },
+    "nat": "ES"
+},
+{
+    "gender": "male",
+    "name": {
+        "title": "mr",
+        "first": "sohan",
+        "last": "girard"
+    },
+    "location": {
+        "street": "3227 montée saint-barthélémy",
+        "city": "nanterre",
+        "state": "landes",
+        "postcode": 36621
+    },
+    "email": "sohan.girard@example.com",
+    "login": {
+        "username": "smallladybug275",
+        "password": "cecile",
+        "salt": "WRDSCl3D",
+        "md5": "611c482771b470fc6674d991adf211af",
+        "sha1": "8087e9fe9bd53c18a036ffbc91657e6c1dcc4822",
+        "sha256": "53eacb1529a07ec17c161cb2e617300836db0c00fbf73a4cd301f4690bef6855"
+    },
+    "dob": "1984-10-31 23:56:14",
+    "registered": "2004-07-11 10:21:42",
+    "phone": "03-84-36-79-56",
+    "cell": "06-22-98-56-35",
+    "id": {
+        "name": "INSEE",
+        "value": "184952540850 91"
+    },
+    "picture": {
+        "large": "https://randomuser.me/api/portraits/men/20.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/20.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/20.jpg"
+    },
+    "nat": "FR"
+},
+{
+    "gender": "male",
+    "name": {
+        "title": "mr",
+        "first": "barry",
+        "last": "payne"
+    },
+    "location": {
+        "street": "7513 e sandy lake rd",
+        "city": "lansing",
+        "state": "north carolina",
+        "postcode": 72948
+    },
+    "email": "barry.payne@example.com",
+    "login": {
+        "username": "redtiger287",
+        "password": "muffin",
+        "salt": "KwC14J5K",
+        "md5": "39ba0e3615844f22193e3be3d5bdc304",
+        "sha1": "bcd40a1b3f2e544f1a06ed6b601c331558545796",
+        "sha256": "ffddade2bada4044f23c995a0f9e27bfdf1fc5e3400ad1360f7ebfd0032d2696"
+    },
+    "dob": "1993-11-12 17:00:41",
+    "registered": "2015-01-29 12:20:34",
+    "phone": "(642)-443-8825",
+    "cell": "(889)-856-4012",
+    "id": {
+        "name": "SSN",
+        "value": "303-12-8679"
+    },
+    "picture": {
+        "large": "https://randomuser.me/api/portraits/men/66.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/66.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/66.jpg"
+    },
+    "nat": "US"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "webapiexample",
+  "version": "1.0.0",
+  "description": "example web api",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InnowaveTechnologies/webApiExample.git"
+  },
+  "author": "jsimoes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/InnowaveTechnologies/webApiExample/issues"
+  },
+  "homepage": "https://github.com/InnowaveTechnologies/webApiExample#readme"
+}
