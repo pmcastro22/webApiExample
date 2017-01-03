@@ -44,11 +44,11 @@ router.route('/bears')
         bear.name = req.body.name;  // set the bears name (comes from the request)
 
         // save the bear and check for errors
-        bear.save(function(err) {
+        bear.save(function(err,newbear) {
             if (err)
                 res.send(err);
-
-            res.json({ message: 'Bear created!' });
+                    
+            res.json({ message: newbear.id+ ' Bear created!' });
         });
         
     })
