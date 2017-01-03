@@ -3,6 +3,9 @@ logs
 *.log
 npm-debug.log*
 
+output.xml
+report.html
+log.html
 
 # Runtime data
 pids
