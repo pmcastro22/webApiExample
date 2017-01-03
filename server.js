@@ -71,7 +71,7 @@ router.route('/bears')
         Bear.count( function(err, bear) {
             if (err)
                 res.send(err);
-            res.json(bear);
+            res.json({ count: bear });
         });
     })
 // on routes that end in /bears/:bear_id
