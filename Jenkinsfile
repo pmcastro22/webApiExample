@@ -41,17 +41,17 @@ node('master') {
 
             print "Environment will be : ${env.NODE_ENV}"
 
-            sh 'node -v'
-            sh 'npm prune'
-            sh 'npm install'
-            sh 'npm test'
+            bat 'node -v'
+            bat 'npm prune'
+            bat 'npm install'
+            bat 'npm test'
 
       
        stage 'Cleanup'
 
             echo 'prune and cleanup'
-            sh 'npm prune'
-            sh 'rm node_modules -rf'
+            bat 'npm prune'
+            bat 'rm node_modules -rf'
 
             mail body: 'project build successful',
                         from: 'xxxx@yyyyy.com',
