@@ -47,7 +47,7 @@ node('master') {
             bat 'forever start server.js'
 
        stage 'Tests'
-            bat 'robo tests'
+            bat 'robot tests'
        stage 'Cleanup'
 
             echo 'prune and cleanup'
