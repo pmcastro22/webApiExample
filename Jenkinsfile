@@ -35,21 +35,23 @@ node('master') {
 
             checkout scm
 
-       stage 'Test'
+       stage 'Install'
 
             env.NODE_ENV = "test"
 
             print "Environment will be : ${env.NODE_ENV}"
-
+            
             bat 'node -v'
             bat 'npm prune'
             bat 'npm install'
-            bat 'npm test'
+            bat 'forever start server.js'
 
-      
+       stage 'Tests'
+            bat 'robo tests'
        stage 'Cleanup'
 
             echo 'prune and cleanup'
+            bat 'forever stop server.js'
             bat 'npm prune'
             bat 'rm node_modules -rf'
 
