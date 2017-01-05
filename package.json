@@ -4,9 +4,10 @@
   "description": "example web api",
   "main": "server.js",
   "dependencies": {
+    "body-parser": "~1.0.1",
     "express": "^4.14.0",
-        "mongoose": "~3.6.13",
-        "body-parser": "~1.0.1"
+    "mongodb": "^2.2.19",
+    "mongoose": "~3.6.13"
   },
   "devDependencies": {},
   "scripts": {
