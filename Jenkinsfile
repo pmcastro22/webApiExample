@@ -45,7 +45,7 @@ node('master') {
                 (
                         echo systemLog:
                         echo    destination: file
-                        echo    path: c:\\data\\log\mongod.log
+                        echo    path: c:\\data\\log\\mongod.log
                         echo storage:
                         echo    dbPath: c:\\data\\db
                 ) > "mongod.cfg"
