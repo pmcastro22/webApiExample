@@ -2,13 +2,25 @@
 
 // BASE SETUP
 // =============================================================================
-var mongoose   = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/bears'); // connect to our database
-var Bear     = require('./models/bear');
+var MongoClient = require('mongodb').MongoClient
+    , assert = require('assert');
+
+// Connection URL
+var url = 'mongodb://localhost:27017/test';
+var database;
+
+// Use connect method to connect to the server
+MongoClient.connect(url, function (err, db) {
+    assert.equal(null, err);
+    console.log("Connected successfully to server");
+
+    database = db;
+});
+
 
 // call the packages we need
-var express    = require('express');        // call express
-var app        = express();                 // define our app using express
+var express = require('express');        // call express
+var app = express();                 // define our app using express
 var bodyParser = require('body-parser');
 
 // configure app to use bodyParser()
@@ -23,52 +35,49 @@ var port = process.env.PORT || 8081;        // set our port
 var router = express.Router();              // get an instance of the express Router
 
 // middleware to use for all requests
-router.use(function(req, res, next) {
+router.use(function (req, res, next) {
     // do logging
     console.log('Something is happening.');
     next(); // make sure we go to the next routes and don't stop here
 });
 
 // test route to make sure everything is working (accessed at GET http://localhost:8080/api)
-router.get('/', function(req, res) {
-    res.json({ message: 'hooray! welcome to our api!' });   
+router.get('/', function (req, res) {
+    res.json({ message: 'hooray! welcome to our api!' });
 });
 
 // more routes for our API will happen here
 router.route('/bears')
 
     // create a bear (accessed at POST http://localhost:8081/api/bears)
-    .post(function(req, res) {
-        
-        var bear = new Bear();      // create a new instance of the Bear model
-        bear.name = req.body.name;  // set the bears name (comes from the request)
+    .post(function (req, res) {
+
+        var bear = { name: req.body.name, title: "About MongoDB" };    // create a new instance of the Bear model
+
 
         // save the bear and check for errors
-        bear.save(function(err,newbear) {
-            if (err)
-                res.send(err);
-                    
-            res.json({ message: newbear.id+ ' Bear created!' });
-        });
-        
+        database.collection('Bears').insertOne(bear, function (err, r) {
+            console.log(r.insertedCount);
+            res.json({ inserted: r.insertedId, insertCount: r, insertedCount });
+        })
+
     })
 
     // get all the bears (accessed at GET http://localhost:8081/api/bears)
-    .get(function(req, res) {
-        Bear.find(function(err, bears) {
-            if (err)
-                res.send(err);
-
-            res.json(bears);
-        });
+    .get(function (req, res) {
+        database.collection('Bears').find().toArray(function (err, results) {
+            console.log(results)
+            res.json(results);
+            // send HTML file populated with quotes here
+        })
     });
 
 
-    router.route('/bears/count')
+router.route('/bears/count')
 
     // get bear count
-    .get(function(req, res) {
-        Bear.count( function(err, bear) {
+    .get(function (req, res) {
+        database.collection('Bears').count(function (err, bear) {
             if (err)
                 res.send(err);
             res.json({ count: bear });
@@ -79,18 +88,20 @@ router.route('/bears')
 router.route('/bears/:bear_id')
 
     // get the bear with that id (accessed at GET http://localhost:8080/api/bears/:bear_id)
-    .get(function(req, res) {
-        Bear.findById(req.params.bear_id, function(err, bear) {
+    .get(function (req, res) {
+        var id = new require('mongodb').ObjectID(req.params.bear_id);
+        database.collection('Bears').findOne(id, function (err, bear) {
             if (err)
                 res.send(err);
             res.json(bear);
         });
     })
     // update the bear with this id (accessed at PUT http://localhost:8080/api/bears/:bear_id)
-    .put(function(req, res) {
+    .put(function (req, res) {
 
         // use our bear model to find the bear we want
-        Bear.findById(req.params.bear_id, function(err, bear) {
+        var id = new require('mongodb').ObjectID(req.params.bear_id);
+        database.collection('Bears').findOne(id, function (err, bear) {
 
             if (err)
                 res.send(err);
@@ -98,7 +109,7 @@ router.route('/bears/:bear_id')
             bear.name = req.body.name;  // update the bears info
 
             // save the bear
-            bear.save(function(err) {
+            database.collection('Bears').update({ _id: id }, { $set: { name: req.body.name } }, function (err, result) {
                 if (err)
                     res.send(err);
 
@@ -108,10 +119,11 @@ router.route('/bears/:bear_id')
         });
     })
     // delete the bear with this id (accessed at DELETE http://localhost:8080/api/bears/:bear_id)
-    .delete(function(req, res) {
-        Bear.remove({
-            _id: req.params.bear_id
-        }, function(err, bear) {
+    .delete(function (req, res) {
+        var id = new require('mongodb').ObjectID(req.params.bear_id);
+        database.collection('Bears').remove({
+            _id: id
+        }, function (err, bear) {
             if (err)
                 res.send(err);
 
@@ -125,5 +137,8 @@ app.use('/api', router);
 
 // START THE SERVER
 // =============================================================================
-app.listen(port);
+var server = app.listen(port, function () {
+    console.log('Express server listening on port ' + server.address().port);
+});
+//server.timeout = 10000;
 console.log('Magic happens on port ' + port);
