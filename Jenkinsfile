@@ -37,19 +37,19 @@ node('master') {
        stage 'mongodb start'
             bat """
                  @echo off
-                md c:\data
-                cd c:\data
+                md c:\\data
+                cd c:\\data
                 md log
                 md db
                 rem standalone codeblock
                 (
                         echo systemLog:
                         echo    destination: file
-                        echo    path: c:\data\log\mongod.log
+                        echo    path: c:\\data\\log\mongod.log
                         echo storage:
-                        echo    dbPath: c:\data\db
+                        echo    dbPath: c:\\data\\db
                 ) > "mongod.cfg"
-                call "C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe" --config "C:\data\mongod.cfg"
+                call "C:\\Program Files\\MongoDB\\Server\\3.4\bin\\mongod.exe" --config "C:\\data\\mongod.cfg"
                 """
        stage 'Install'
 
