@@ -57,8 +57,8 @@ router.route('/bears')
 
         // save the bear and check for errors
         database.collection('Bears').insertOne(bear, function (err, r) {
-            console.log(r.insertedCount);
-            res.json({ inserted: r.insertedId, insertCount: r, insertedCount });
+            //console.log(r.insertedCount);
+            res.json({ inserted:"ok" });
         })
 
     })
