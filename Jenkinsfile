@@ -35,7 +35,7 @@ node('master') {
 
             checkout scm
        stage 'mongodb start'
-            bat '
+            bat """
                  @echo off
                 md c:\data
                 cd c:\data
@@ -50,7 +50,7 @@ node('master') {
                         echo    dbPath: c:\data\db
                 ) > "mongod.cfg"
                 call "C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe" --config "C:\data\mongod.cfg"
-                '
+                """
        stage 'Install'
 
             env.NODE_ENV = "test"
