@@ -53,7 +53,7 @@ node('master') {
             echo 'prune and cleanup'
             bat 'forever stop server.js'
             bat 'npm prune'
-            bat 'rd node_modules /s'
+            bat 'rd node_modules /s /q'
 
             
 
