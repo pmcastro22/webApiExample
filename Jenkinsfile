@@ -50,7 +50,7 @@ node('master') {
                         echo    dbPath: c:\\data\\db
                 ) > "mongod.cfg"
                 call "C:\\Program Files\\MongoDB\\Server\\3.4\bin\\mongod.exe" --config "C:\\data\\mongod.cfg"
-                || EXIT /B 0
+                EXIT /B 0
                 """
        stage 'Install'
 
