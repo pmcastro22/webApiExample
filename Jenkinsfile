@@ -34,24 +34,7 @@ node('master') {
        stage 'Checkout'
 
             checkout scm
-       stage 'mongodb start'
-            bat """
-                 @echo off
-                md c:\\data
-                cd c:\\data
-                md log
-                md db
-                rem standalone codeblock
-                (
-                        echo systemLog:
-                        echo    destination: file
-                        echo    path: c:\\data\\log\\mongod.log
-                        echo storage:
-                        echo    dbPath: c:\\data\\db
-                ) > "mongod.cfg"
-                call "C:\\Program Files\\MongoDB\\Server\\3.4\bin\\mongod.exe" --config "C:\\data\\mongod.cfg"
-                EXIT /B 0
-                """
+       
        stage 'Install'
 
             env.NODE_ENV = "test"
