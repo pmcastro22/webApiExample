@@ -47,7 +47,7 @@ node('master') {
             bat 'forever start server.js'
 
        stage 'Tests'
-            bat '"C:\\Program Files (x86)\\SmartBear\\SoapUI-5.3.0\\bin\\testrunner.bat" -j tests\\soapui.xml'
+            bat '"C:\\Program Files (x86)\\SmartBear\\SoapUI-5.2.1\\bin\\testrunner.bat" -j tests\\soapui.xml'
        stage 'Cleanup'
 
             echo 'prune and cleanup'
