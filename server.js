@@ -80,7 +80,7 @@ router.route('/bears/count')
         database.collection('Bears').count(function (err, bear) {
             if (err)
                 res.send(err);
-            //res.json({ count: bear });
+            res.json({ count: bear });
         });
     })
 // on routes that end in /bears/:bear_id
